@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon And Fest 2025</title>
+    <link rel="stylesheet" href="LP-Kbc-p1.css">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="../assets/kbclogo.png"> <!-- favicons tab icon -->
+    <script src="https://kit.fontawesome.com/baf767acce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="../assets/kbc new.png" alt="Kathmandu University" class="logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="LP-Kbc-p1.html" class="nav-link active">HOME</a>
+                <a href="fest-page.html" class="nav-link">FEST</a>
+                <a href="about-us.html" class="nav-link">ABOUT US</a>
+                <a href="contact-us.html" class="nav-link">CONTACT US</a>
+                <button class="register-btn">Register</button>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+
+    <div class="about-content">
+        <div class="about-blur-box">
+            <h2>About Us</h2>
+            <p>
+                <strong>KBC</strong> (Kathmandu Business Campus) is an enterprise of Samriddhi School for providing
+                higher quality education in the field of management and Information Communication Technology (ICT).
+                We aim to produce well-qualified graduates through competent management and ICT education, and our
+                graduates will be the backbone for economic development and prosperity of the nation.
+            </p>
+            <p>
+                We appreciate diversity and realize that each student is different and should be treated as a unique
+                individual. Our constant endeavour is to help each student realize her/his full potential and
+                discover new horizons in learning. There are no boundaries for learning and we always encourage
+                trying out new ideas. It’s an educational institute for the 21st century where learning is fun and
+                life-long.
+            </p>
+            <p>Kathmandu Business Campus (KBC), an initiative of Samriddhi School, offers high-quality education in
+                Management and ICT. It aims to produce capable graduates who contribute to national progress. KBC
+                embraces diversity and treats each student as unique. Learning here is innovative, fun, and
+                life-long. It prepares students for the challenges of the 21st century.KBC believes every student is
+                unique and strives to help them reach their full potential. It provides a supportive and innovative
+                environment for personal and academic growth. Learning goes beyond textbooks, encouraging creativity
+                and critical thinking. Diversity is valued, and education is made engaging and future-focused.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>We provide complete student care with:</h3>
+            <ul>
+                <li>Center for Entrepreneurship Innovation (CEI)</li>
+                <li>Samriddhi Cisco Academy</li>
+                <li>Center for Career Development (CCD)</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">HOME</a>
+                    <a href="#" class="footer-link">COMPANY</a>
+                    <a href="#" class="footer-link">BLOG</a>
+                    <a href="#" class="footer-link">CONTACT US</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle responsive huda 
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
