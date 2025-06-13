@@ -13,7 +13,6 @@
     text-align: center;
 }
 
-
 .contact {
     display: flex;
     justify-content: space-between;
@@ -64,18 +63,21 @@
     min-width: 20px;
 }
 
-/* Map Image */
+/* Map container styles */
 .map-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-.map-image img {
-    max-width: 100%;
-    border-radius: 10px;
+.map-image iframe {
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 /* Responsive for Mobile */
@@ -92,6 +94,7 @@
 
     .contact-info p {
         justify-content: center;
+        size: 50px;
     }
 
     .contact-info h2 {
@@ -100,5 +103,10 @@
 
     .contact-page h1 {
         font-size: 2rem;
+    }
+
+    .map-image iframe {
+        width: auto;
+        height: 250px;
     }
 }

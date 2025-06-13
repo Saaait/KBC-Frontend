@@ -299,61 +299,61 @@
 
 /* Sponsor Tiers Layout */
 
-/* General Section Styling */
+/* Sponsors Section */
 .sponsors {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+    padding: 60px 0;
+    background-color: #f0f4ff;
+}
+
+/* Container */
+.sponsors .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: center;
 }
 
-.sponsors-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+/* Section Title */
+.section-title {
+    font-size: 3.5rem;
     color: #1E3A8A;
-    margin-bottom: 60px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Sponsor Grid Layout */
-.sponsors-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-/* Title Sponsor */
-.title-sponsor {
+/* Sponsor Groups */
+.sponsor-group {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-}
-
-.title-sponsor .sponsor-img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-}
-
-/* Other Tiers */
-.sponsor-tier {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.sponsor-tier .sponsor-img {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+/* Title Sponsor */
+.title-sponsor .sponsor-img {
+    width: 380px;
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.sponsor-tier .sponsor-img:hover {
-    opacity: 1;
-    transform: scale(1.05);
+/* Other Sponsors */
+.other-sponsors .sponsor-img {
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
+
+/* Hover Effect */
+.sponsor-img:hover {
+    transform: scale(1.06);
+}
+
 
 
 /* ************************************* BREAK ******************************************** */
@@ -447,6 +447,13 @@
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.map-img iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    border-radius: 20px;
 }
 
 
@@ -702,11 +709,23 @@
         gap: 10px;
     } */
 
-    .map-img {
+    /* .map-img {
         margin-top: 30px;
         height: 250px;
         border-radius: 15px;
         margin-bottom: 30px;
+    } */
+
+    .map-img {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 200px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .map-img iframe {
+        border-radius: 12px;
     }
 
     .contact-decoration {

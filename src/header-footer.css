@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
@@ -22,7 +22,8 @@ body {
 
 /* Header Styles */
 .header {
-    background: #FF8C42;
+    /* add , 0.7 for transparent */
+    background: rgb(255, 140, 66);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -51,7 +52,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #666;
+    color: #ffffff;
     font-weight: 500;
     font-size: 14px;
     transition: color 0.3s ease;
@@ -60,6 +61,14 @@ body {
 .nav-link:hover {
     color: #1E40AF;
 }
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-left: -560px;
+    /* pushes it to the right */
+}
+
 
 .register-btn {
     background: #1E3A8A;
@@ -70,6 +79,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-size: 14px;
 }
 
 .register-btn:hover {
@@ -232,7 +242,7 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background: #FF8C42;
+        background: rgb(255, 140, 66);
         flex-direction: column;
         padding: 20px;
         gap: 20px;
@@ -249,6 +259,23 @@ body {
 
     .logo {
         height: 45px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 80px
+    }
+
+    .register-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 20px;
     }
 
     /* Footer Mobile */

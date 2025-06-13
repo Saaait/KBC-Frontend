@@ -10,7 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../assets/kbclogo.png"> <!-- favicons tab icon -->
-    <script src="https://kit.fontawesome.com/baf767acce.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/baf767acce.js" crossorigin="anonymous"></script> <!--Icons-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!--Fonts-->
 </head>
 
 <body>
@@ -25,8 +31,10 @@
                 <a href="fest-page.html" class="nav-link">FEST</a>
                 <a href="about-us.html" class="nav-link">ABOUT US</a>
                 <a href="contact-us.html" class="nav-link">CONTACT US</a>
-                <button class="register-btn">Register</button>
             </nav>
+            <div class="button-group">
+                <button class="register-btn">Login</button>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -76,7 +84,7 @@
                         the best ideas often winning prizes or opportunities for further platform for learning,
                         networking, and creative problem-solving.
                     </p>
-                    <button class="view-more-btn">View More →</button>
+                    <button class="view-more-btn" onclick="window.location.href='fest-page.html';">View More →</button>
                 </div>
                 <div class="visual-content">
                     <div class="hackathon-visual">
@@ -124,7 +132,8 @@
                         going strong. Come to the event with fun musical and cultural competition too, it's the perfect
                         way to recharge!
                     </p>
-                    <button class="learn-more-btn">Learn More →</button>
+                    <button class="learn-more-btn" onclick="window.location.href='fest-page.html';">Learn More
+                        →</button>
                 </div>
             </div>
         </div>
@@ -132,34 +141,22 @@
 
     <section class="sponsors">
         <div class="container">
-            <h2 class="sponsors-title">Our Sponsors</h2>
-            <div class="sponsors-grid">
-                <!-- Title Sponsor -->
-                <div class="sponsor-tier title-sponsor">
-                    <img src="../assets/google_2015.svg" alt="Google" class="sponsor-img">
-                </div>
+            <h2 class="section-title">Our Sponsors</h2>
 
-                <!-- Gold Sponsors -->
-                <div class="sponsor-tier gold-sponsors">
-                    <img src="../assets/microsoft-6.svg" alt="Microsoft" class="sponsor-img">
-                    <img src="../assets/apple-11.svg" alt="Apple" class="sponsor-img">
-                </div>
+            <!-- Title Sponsor -->
+            <div class="sponsor-group title-sponsor">
+                <img src="../assets/bfuso.png" alt="Title Sponsor Logo" class="sponsor-img" />
+            </div>
 
-                <!-- Silver Sponsors -->
-                <div class="sponsor-tier silver-sponsors">
-                    <img src="../assets/facebook-5.svg" alt="Facebook" class="sponsor-img">
-                    <img src="../assets/airbnb.svg" alt="Airbnb" class="sponsor-img">
-                </div>
-
-                <!-- Bronze Sponsors -->
-                <div class="sponsor-tier bronze-sponsors">
-                    <img src="../assets/nokia-3.svg" alt="Nokia" class="sponsor-img">
-                    <img src="../assets/oracle-6.svg" alt="Oracle" class="sponsor-img">
-                    <img src="../assets/axure-2.svg" alt="Axure" class="sponsor-img">
-                </div>
+            <!-- Other Sponsors -->
+            <div class="sponsor-group other-sponsors">
+                <img src="../assets/bello.svg" alt="Sponsor Logo" class="sponsor-img" />
+                <img src="../assets/metlife.svg" alt="Sponsor Logo" class="sponsor-img" />
+                <img src="../assets/7star.svg" alt="Sponsor Logo" class="sponsor-img" />
             </div>
         </div>
     </section>
+
 
 
     <!-- Contact Section -->
@@ -194,7 +191,16 @@
                     </div> -->
                 </div>
                 <div class="contact-map">
-                    <img src="../assets/Untitled design.jpg" alt="Map" class="map-img">
+                    <div id="map" class="map-img">
+                        <!-- <a href="https://goo.gl/maps/example123" target="_blank">
+                        <img src="../assets/Untitled design.jpg" alt="My Location" class="map-img">
+                    </a> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.12906628016185!2d85.3023278720716!3d27.737741477942514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb192d68e5713d%3A0x6fb9834c735a5c86!2sKathmandu%20Business%20Campus%20(KBC)!5e0!3m2!1sen!2snp!4v1749612320586!5m2!1sen!2snp"
+                            width="600" height="300" style="border-radius:20px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,16 +211,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="#" class="footer-link">HOME</a>
-                    <a href="#" class="footer-link">COMPANY</a>
-                    <a href="#" class="footer-link">BLOG</a>
-                    <a href="#" class="footer-link">CONTACT US</a>
+                    <a href="LP-Kbc-p1.html" class="nav-link">HOME</a>
+                    <a href="fest-page.html" class="nav-link">FEST</a>
+                    <a href="about-us.html" class="nav-link">ABOUT US</a>
+                    <a href="contact-us.html" class="nav-link">CONTACT US</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="mailto:info@kbcampus.edu.np" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/kathmandu_b_campus" class="social-link"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61566588200416" class="social-link"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@kathmandubusinesscampus_" class="social-link"><i
+                            class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
@@ -222,7 +231,7 @@
 
 
     <!-- Register Modal -->
-    <div id="registerModal" class="modal">
+    <!-- <div id="registerModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Register</h2>
@@ -239,7 +248,7 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -267,7 +276,8 @@
         // });
     </script>
 
-    <script>
+    <!-- Form button -->
+    <!-- <script>
         const registerBtn = document.querySelector('.register-btn');
         const modal = document.getElementById('registerModal');
         const closeBtn = document.querySelector('.close');
@@ -285,7 +295,7 @@
                 modal.style.display = 'none';
             }
         });
-    </script>
+    </script> -->
 
 </body>
 
