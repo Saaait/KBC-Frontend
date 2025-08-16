@@ -62,6 +62,11 @@ body {
     color: #1E40AF;
 }
 
+.nav-link.active {
+    color: #1E40AF;
+}
+
+
 .button-group {
     display: flex;
     gap: 10px;
