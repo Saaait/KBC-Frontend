@@ -1,30 +1,30 @@
-# KBC-Frontend
+# KBC-HackFest
 
-**KBC-Frontend** is the **frontend of a hackathon project** developed for [Hackfest / your college hackathon].  
-It provides an interactive and user-friendly interface for the project created during the event.
+**KBC-HackFest** is the **visitor-facing interface** for KBC.  
+It provides a **clean, responsive, and interactive frontend** designed to deliver a seamless experience to visitors.
 
 ---
 
 ## 🚀 Features
 
-- Responsive and modern UI design  
-- Interactive pages for showcasing project features  
-- Mobile-friendly layout  
-- Optimized for fast performance during hackathon demos  
+- **Modern, responsive design** for all devices  
+- **User-friendly interface** for easy navigation  
+- **Interactive pages** to explore information efficiently  
+- **Optimized performance** for fast loading  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS or your framework)  
-- Responsive design with Flexbox/Grid
+- **HTML5** – Web page structure  
+- **CSS3** – Styling and responsive design  
+- **JavaScript** – Dynamic interactions  
+- **Flexbox & Grid** – Layout and alignment  
 
 ---
 
 ## 📸 Screenshots
 
-**Home Page**  
-![Home Page](./assets/Screenshot_16-8-2025_152732_127.0.0.1.png)
+**Home Page** 
 
+![Home Page](./assets/Screenshot_16-8-2025_152732_127.0.0.1.jpeg)
